@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { 
+    --main-white: #F7F3F0;
+    --main-brown: #C74817;
+    --sec-brown: #D3A863;
+    --gray: #5B5858;
+    --main-black: #131313;
+    --sec-black: #3C3C3C;
+    --main-red: #EE2852;
+    --open-sans: "Open Sans", sans-serif;
+    --honey: #F6CD63;
+    
+    .pad{ 
+        @apply px-10;
+    }
+    .lg-pad{ 
+        @apply px-36;
+    }
+    .xl-pad{ 
+        @apply px-48;
+    }
+    .trans{ 
+        @apply transition-all duration-300;
+    }
+    .space-up { 
+        @apply mt-32;
+    }
+    .secTitle { 
+        @apply text-main-black text-[36px] font-bold uppercase;
+    }
+    .new { 
+        @apply relative before:content-['new'] before:absolute before:bg-main-brown before:font-bold before:uppercase before:text-main-white before:p-1 before:pr-0 before:top-8 before:transition-all before:duration-300  before:hover:pr-8 before:right-0 ;
+    }
+}
